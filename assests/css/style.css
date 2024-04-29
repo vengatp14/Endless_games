@@ -1,0 +1,34 @@
+/* common styles  */
+body {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+
+
+
+/* nav bar css */
+.nav-endless{
+    background-color:  #FF9001BF;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query  */
+@media screen and (min-width:0px) and (max-width:768px){
+    .icons-nav{
+        display: none !important;
+    }
+}
