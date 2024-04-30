@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./assests/vendors/bootstrap-5.3.3-dist/css/bootstrap.min.css">
     <!-- main css  -->
     <link rel="stylesheet" href="./assests/css/style.css">
+       <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
 
@@ -40,10 +42,94 @@
 <!-- navbar ends here  -->
 
 <!-- hero section starts here  -->
+<section class="hero-sec" id="hr-sec">
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-12">
+      <h1 class="text-white">Mediahub Solutions</h1>
+      <p class="text-white">We are a leading company specializing in content creation, video production, and multimedia storytelling. Our innovative media solutions ensure enhanced brand visibility and engagement. Elevate your online presence with us! </p>
+      <button type="button" class="btn-get ">Get Started</button>
+    </div>
+    <div class="col-md-6 col-12 bor-org ">
+      
+      <div class="swiper mySwiper ">
+        <h2 class="text-white">Top Trending Projects</h2>
+        <div class="">
+          <div class="swiper-button-next"><img src="./assests/img/arrow-R.png" alt=""></div>
+          <div class="swiper-button-prev"><img src="./assests/img/arrow-L.png" alt=""></div>
+        </div>
+      
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./assests/img/pic1.png" alt=""></div>
+          <div class="swiper-slide"><img src="./assests/img/pic2.png" alt=""></div>
+          <div class="swiper-slide"><img src="./assests/img/pic3.png" alt=""></div>
+          <div class="swiper-slide"><img src="./assests/img/pic1.png" alt=""></div>
+          <div class="swiper-slide"><img src="./assests/img/pic2.png" alt=""></div>
+          <div class="swiper-slide"><img src="./assests/img/pic3.png" alt=""></div>
+          <div class="swiper-slide"><img src="./assests/img/pic1.png" alt=""></div>
+          <div class="swiper-slide"><img src="./assests/img/pic2.png" alt=""></div>
+          <div class="swiper-slide"><img src="./assests/img/pic3.png" alt=""></div>
+       
+        </div>
+        
+        <!-- <div class="swiper-pagination"></div> -->
+      </div>
+ 
+    </div>
+  </div>
+</div>
+</section>
 <!-- hero section ends here  -->
 
 
 
+<!-- service section starts here  -->
+<section class="ser-sec">
+  <div class="container">
+    <h2 class="text-white">Services</h2>
+    <div class="row">
+      <div class="col-md-4 col-12">
+        <div class="card border-0">
+          <div class="card-head crd-hr">
+            <div class="d-flex justify-content-center">
+              <img class="" src="./assests/img/ser-icon-1.svg" alt="">
+            <h3 class="text-white ms-1 mt-2">Content Creation</h3></div>
+          </div>
+          <div class="card-body bg-dark crd-bor">
+            <p class="text-white">Content creation is the art of crafting compelling, valuable, and relevant material across various media platforms to engage and inform audiences effectively.  </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-12"></div>
+      <div class="col-md-4 col-12"></div>
+    </div>
+  </div>
+</section>
+<!-- servicce section ends here -->
+
+
 </body>
+
+<!-- boostrap link  -->
 <script src="./assests/vendors/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+<!-- swipper link -->
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+ <!-- Initialize Swiper -->
+ <script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+  });
+</script>
 </html>
